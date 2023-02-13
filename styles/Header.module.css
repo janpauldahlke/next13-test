@@ -1,0 +1,18 @@
+.header {
+  min-height: 10vh;
+  min-width: 100vw;
+  background-color: #f1f1f1;
+
+  display: flex;
+}
+
+.links {
+  margin: 1rem;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+.links li {
+  margin: 1rem;
+}

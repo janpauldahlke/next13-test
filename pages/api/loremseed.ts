@@ -1,16 +1,18 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { seed } from '../../seed'
 
 type Data = {
-  name: string
+  text: string
 }
 
 export default function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  res.status(200).json({ name: 'John Doe' })
-}
 
+  const data = seed();
+  console.log(data);
+  res.status(200).json(data);
+}
 
 
